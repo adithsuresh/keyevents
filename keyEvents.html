@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Key Events Viewer</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="preload" href="./fonts/Nunito-Regular-latin.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="./fonts/Nunito-Regular-latin-ext.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./fonts/font.css" />
+    <script src="./keyCodesWithEvents.js" defer></script>
+    <script src="./keyEvents.js" defer></script>
+    <link rel="stylesheet" href="./keyEvents.css" />
+  </head>
+  <body>
+    <div class="container container--flex">
+      <div class="top card">
+        <div>JavaScript Key Code</div>
+        <div class="keycode_top keycode_top_init">Press any key to get the JavaScript event keycode info</div>
+      </div>
+      <div class="bottom hidden">
+        <div>
+          <div class="keTitle">event.key</div>
+          <div class="keKey">-</div>
+        </div>
+        <div>
+          <div class="keTitle">event.location</div>
+          <div class="keLocation">-</div>
+        </div>
+        <div>
+          <div class="keTitle">event.code</div>
+          <div class="keCode">-</div>
+        </div>
+        <div>
+          <div class="keTitle">event.which</div>
+          <div class="keWhich">-</div>
+        </div>
+        <div>
+          <div class="keTitle">Meta Keys</div>
+          <div class="keMetakeys">
+            <div>
+              <div class="keSuperkey">&#8984;</div>
+              <div class="keShiftkey">&#8679;</div>
+              <div class="keAltkey">&#8997;</div>
+              <div class="keCtrlkey">&#94;</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="keTitle">Event Dump</div>
+          <div class="keEventdump">
+            <pre>-</pre>
+          </div>
+        </div>
+        <div>
+          <div class="keTitle">Unicode</div>
+          <div class="keUnicode">-</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
